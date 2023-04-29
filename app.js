@@ -1,25 +1,40 @@
-var history = document.querySelector('.history');
-var vision = document.querySelector('.vision');
-var goals = document.querySelector('.goals');
-var description = document.querySelector('.description');
+function declare(){
+var description1 = document.getElementById("description1");
+// console.log(description1);
+var description2 = document.getElementById("description2");
+var description3 = document.getElementById("description3");
+}
 
+var historyid = document.getElementById("historyid")
+// console.log(historyid);
+var visionid = document.getElementById("visionid")
+var goalsid = document.getElementById("goalsid")
 
-history.addEventListener('click', ()=>{
-    description.innerHTML = `<h3 class="descHeading">History</h3><p class="para">I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice pop-up XOXO lomo kombucha glossier bicycle rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard tilde try-hard, woke fixie banjo man bun. Small batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral direct trade hoodie ugh chambray, craft beer pork belly flannel tacos single-origin coffee art party migas plaid pop-up.</p>
-    `
-});
-
-vision.addEventListener('click', ()=>{
-    description.innerHTML = `<h3 class="descHeading">Vision</h3>
-    <p class="para">Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal deep v hella biodiesel. Church-key listicle polaroid put a bird on it chillwave palo santo enamel pin, tattooed meggings franzen la croix cray. Retro yr aesthetic four loko tbh helvetica air plant, neutra palo santo tofu mumblecore. Hoodie bushwick pour-over jean shorts chartreuse shabby chic. Roof party hammock master cleanse pop-up truffaut, bicycle rights skateboard affogato readymade sustainable deep v live-edge schlitz narwhal.</p><br /><br />
-    list item
-    list item<br />
-    list item<br />
-    `
-});
-goals.addEventListener('click', ()=>{
-    description.innerHTML = `
-                    <h3 class="descHeading">Goals</h3>
-                    <p class="para">Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four dollar toast raclette shoreditch church-key. Poutine etsy tote bag, cred fingerstache leggings cornhole everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk swag, mixtape hashtag marfa readymade direct trade man braid cold-pressed roof party. Small batch adaptogen coloring book heirloom. Letterpress food truck hammock literally hell of wolf beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie, banh mi salvia venmo photo booth quinoa chicharrones.</p>
-    `
-});
+historyid.addEventListener('click',()=>{
+  historyid.classList.add('active')
+  declare();
+  visionid.classList.remove("active")
+  goalsid.classList.remove("active")
+  // console.log(description1)
+  description1.style.display = "block";
+  description2.style.display = "none";
+  description3.style.display = "none";
+})
+visionid.addEventListener('click',()=>{
+  visionid.classList.add('active')
+  declare();
+  historyid.classList.remove("active")
+  goalsid.classList.remove("active")
+  description1.style.display = "none";
+  description2.style.display = "block";
+  description3.style.display = "none";
+})
+goalsid.addEventListener('click',()=>{
+  goalsid.classList.add('active')
+  declare();
+  historyid.classList.remove("active")
+  visionid.classList.remove("active")
+  description1.style.display = "none";
+  description2.style.display = "none";
+  description3.style.display = "block";
+})

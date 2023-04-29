@@ -21,7 +21,7 @@ body{
 
 #para1{
     width: 100vw;
-    font-size: 1.3vw;
+    font-size: 1.7vw;
     text-align: center;  
     color: lightslategray;
     margin-bottom: 8vh;
@@ -69,15 +69,18 @@ body{
     background-color: rgb(214, 214, 214);
     letter-spacing: .5vw;
     text-align: center;
-    transition: .1s ease-in-out;
+    transition: .3s ease-in-out;
+    color: black;
 }
 
 .header input:hover{
     background-color: rgb(235, 249, 255);
+    color: rgb(145, 145, 145);
 }
 
 .active{
     padding: 2vw 2vh;
+    color: black !important;
     background-color: white !important;
 }
 
@@ -89,4 +92,14 @@ body{
 .descHeading{
     letter-spacing: .2vw;
     margin-bottom: 1vh;
+}
+
+
+.none{
+    display: none;
+}
+
+
+@media (max-width: 480px) {
+    
 }
