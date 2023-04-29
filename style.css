@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+}
+
+#heading1{
+    width: 100vw;
+    font-size: 4vw;
+    letter-spacing: 1vw;
+    text-align: center;
+    margin-top: 4vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#para1{
+    width: 100vw;
+    font-size: 1.3vw;
+    text-align: center;  
+    color: lightslategray;
+    margin-bottom: 8vh;
+}
+
+.workingarea{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 40% !important;
+    border-radius: 3%;
+}
+
+.description{
+    background-color: white;
+    margin: 0px 15px;
+    width: 80%;
+    padding: 2vw 4vh;
+}
+
+.header{
+    margin: 0px 15px;
+    width: 80%;
+    height: 4vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(214, 214, 214);
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+}
+
+.header input{
+    padding: 2vh;
+    border: none;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(214, 214, 214);
+    letter-spacing: .5vw;
+    text-align: center;
+    transition: .1s ease-in-out;
+}
+
+.header input:hover{
+    background-color: rgb(235, 249, 255);
+}
+
+.active{
+    padding: 2vw 2vh;
+    background-color: white !important;
+}
+
+.para{
+    color: lightslategrey;
+    letter-spacing: .1vw;
+}
+
+.descHeading{
+    letter-spacing: .2vw;
+    margin-bottom: 1vh;
+}
